@@ -9,7 +9,7 @@ import hashlib
 import hmac
 import os
 
-SECRET = os.environ.get("GFX_SECRET", "GfxDaily-2026-7A1C93B5E2").encode()
+SECRET = os.environ["GFX_SECRET"].encode()
 ALPHABET = "23456789ABCDEFGHJKLMNPQRSTUVWXYZ"
 
 
